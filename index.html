@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script>
+	    $(function() {
+	        $('a[href*=#]:not([href=#])').click(function() {
+	          if( $(this).attr("class")=="smooth-scroll") {
+	            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	                    var target = $(this.hash);
+	                    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	                    if (target.length) {
+	                            $('html,body').animate({
+	                                    scrollTop: target.offset().top
+	                            }, 1000);
+	                            return false;
+	                    }
+	                }
+	            }
+	        });
+	    });
+	  </script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, , initial-scale=1.0">
+	<title>Restaurante</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container-fuid">
+		<nav class="navbar navbar-default">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#"><img src="img/name-01.png" style="background-color: black;"></a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<div class="carousel-caption">
+
+					<img src="img/name-01.png" alt="title">
+				</div>
+
+
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li class="active"><a href="#home">Home</a></li>
+					<li><a href="#story">Background</a></li>
+					<li><a href="#review">Overview</a></li>
+					<li><a href="#menu">Menu</a></li>
+					<li><a href="#contact">Contact</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	</nav>
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="img/farm-2.jpg" alt="farm">
+      <div class="carousel-caption">
+				<h2> Farm to table </h2>
+				<p>Our ingredients come straight from the farm, never frozen, so you get the freshest, most delicious, highest quality food around.</p>
+				<button class="btn btn-default" type="submit">Learn About Our Growers</button>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/wood-2.jpg" alt="wood background">
+      <div class="carousel-caption">
+				<h2> "WE STRESS FRESH!" </h2>
+        <img src="img/name-01.png" alt="title">
+      </div>
+    </div>
+		<div class="item">
+			<img src="img/restaurant-2.jpg" alt="restaurant">
+			<div class="carousel-caption">
+			  <h2> Eat Local </h2>
+				<p>You can feel comfortable knowing that the money you spend stays in the area, and goes to other local farms and businesses, not overseas. You also don’t have to travel far to get the highest quality food around.</p>
+				<button class="btn btn-default" type="submit">Learn More</button>
+
+			</div>
+		</div>
+
+
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div><!--carousel end-->
+
+<div id="story">
+	<div class="container">
+  <div class="row">
+		<div class="col-sm-6">
+<h1> Our Story </h1>
+<h3> One Man, One Dream </h3>
+<img class="flashback" src="http://thespec-stories.com/wp-content/uploads/2015/08/Old-Fish-Market.jpg" alt="restaurant">
+</div>
+<div class="col-md-6">
+	<h1 id="year">1989</h1>
+<p style="float: left"> Lorem ipsum dolor sit amet, tempus suspendisse. Sit facilisis ultrices blandit donec odio nulla, nulla et lectus nullam risus lacus vestibulum, nibh odio ut vel tempus senectus proin, tortor nulla bibendum maecenas a ante gravida, vehicula nec fames viverra mi nibh risus. Purus aliquam, sagittis nec amet, nec interdum ante. Ut suspendisse orci mauris pellentesque tempor, egestas leo vestibulum, ornare at nullam litora, at pellentesque consectetuer. Erat eros ante arcu in at, dui vitae, vulputate fermentum ornare lectus facilisi senectus urna, nisl risus elit sed rhoncus malesuada lectus, laoreet dolor.</p><p> Sagittis eget felis odio at lacinia eu, a viverra sem eget sapien et tempus, fusce sed. Nihil dolor neque, rhoncus natoque faucibus ac euismod lorem. Sollicitudin aenean malesuada tincidunt libero primis, vehicula justo a posuere sociosqu libero, facilisis scelerisque ultrices. Malesuada etiam aliquam eleifend vehicula fringilla, ac malesuada posuere, vitae lacus diam amet. Hendrerit sed vivamus viverra, sollicitudin suspendisse feugiat debitis quisque et, ac in lacus dictum eu, sed vitae eget sit.</p><p>
+Nec ullamcorper, aliquam maecenas in, mauris quam dui nulla quis nunc, eget ultrices in dictum praesent. Mauris vel. Nunc et leo porta libero, penatibus sagittis purus. Consequat non, id mauris suspendisse sociis elementum eget sit, vel mauris phasellus porttitor, sollicitudin vitae minim ac augue. Ut dolor elit quisque lectus, pede proin nonummy suscipit a vestibulum. In sit sed vitae vitae quisque imperdiet, auctor vivamus vestibulum magna magna ligula, sit dolor bibendum adipiscing praesent per eros, arcu elit rutrum vitae. Et nunc omnis sagittis et. Fringilla sed sit, etiam dolor volutpat rutrum fringilla at condimentum, wisi nullam arcu morbi, gravida corporis a amet.
+Quisque volutpat justo pellentesque faucibus eu fames. Aliquet diam duis amet cupiditate, nibh dolor id semper lectus libero, quisque mi amet commodo quisque, ac dapibus, tempus posuere eu eu. At facilisis hendrerit sit, etiam commodo aptent vehicula, aliquet pulvinar libero netus arcu. Interdum vitae, lectus aliquet, dis ligula optio habitant. Quisque tincidunt, eget nec suspendisse, aliquam integer, pretium praesent lobortis consectetuer suspendisse aliquam.</p>
+Gravida id justo ac dolor diam vestibulum. Commodo nam in justo libero, imperdiet egestas ante auctor, mauris ac nulla at ipsum nunc. Sed massa elementum suspendisse senectus fermentum, ac pellentesque, malesuada cursus tellus suscipit aliquid pharetra ante. Pede nullam, aliquam dolor molestie, vivamus pede nunc. Etiam sociosqu rutrum, elementum nonummy, magna rhoncus ut debitis nec dolor. Elit sapien orci sed mi aliquet purus, leo libero egestas in phasellus vehicula at, eget nunc, sapien duis penatibus mauris augue. In metus facilisis vitae. Sed hendrerit, nec pede posuere duis fringilla mi, urna dui wisi vestibulum libero, at aliquam lorem neque enim, nunc magna ligula. Ac blandit elit sem, leo elit tempor potenti amet, malesuada ac nunc. Non ut consectetuer dui augue. Dis ipsum.</p>
+		</div>
+	</div>
+
+
+		</div>
+	</div>
+	</div><!--container-fluid-->
+<div id="review">
+	<div class="row">
+		<div class="col-sm-offset-2 col-sm-6 review-bg">
+			<h1> Fresno Bee </h1>
+			<p> The freshest and best ingredients all around. 5 stars. That's the rating Restaurante just recently got from B.S.Ratings. Having 5 star customer reviews, and critics going on and on about how delicious their food is, it clearly is the best restaurant around! </p>
+
+
+		</div>
+		<!--END REV SECTION-->
+
+		<div id="menu">
+			<div class="container">
+       <div class="row">
+        <div class="col-sm-12">
+					<!-- Nav tabs -->
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+    <li role="presentation" class="active"><a href="#appetizers" aria-controls="appetizers" role="tab" data-toggle="tab">appetizers</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="appetizers">
+    	<div class="row">
+    		<div class="col-sm-3">
+    			<img src="img/dip.jpg" alt="dip" class="thumbnail">
+          <h3>appetizer 1
+
+          </h3>
+					<p> start your meal off with a delicious, toasted garlic bread, with ranch and fresh guacamole! Topped with the highest grade of butter, and the strongest, freshest, garlic, it is a great way to pass the time while you wait for your food! </p>
+
+				</div>
+				<div class="col-sm-3">
+    			<img src="img/eggplant.jpg" alt="eggplant" class="thumbnail img-responsive">
+          <h3>appetizer 2
+
+          </h3>
+					<p>If bread and sushi are just not your thing, you can try our hearty eggplant appetizers, made with the freshest, most delicious ingrediants! A small slab of eggplant, topped with a slight bit of mayonase and ripe tomatoes!</p>
+
+				</div>
+				<div class="col-sm-3">
+    			<img src="img/meat.jpg" alt="meat" class="thumbnail img-responsive">
+          <h3>appetizer 3
+
+          </h3>
+					<p> Our delicious sushi is made with the freshest fish, straight from the docks! Prepared with special spices by our master chef in our kitchen to maximize flavor, to improve your sushi experiance, it is definitley another great way to pass the time while you wait for your food! </p>
+
+				</div>
+				<div class="col-sm-3">
+    			<img src="img/bruschetta.jpg" alt="food" class="thumbnail img-responsive">
+          <h3>appetizer 4
+
+          </h3>
+					<p> Maybe fancy spies and toasted garlic bread is just too fancy for you. Well then you can try our simple bread and tomatoes. And thats just it, bread and tomatoes. Non toasted bread, topped with fresh, bright red tomatoes, it makes for a delicious snack! Or maybe you just like to eat light...
+<p>
+				</div>
+    	</div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+    <div role="tabpanel" class="tab-pane" id="settings">...</div>
+  </div>
+
+
+        </div>
+
+       </div>
+
+			</div>
+			<!--end menu-->
+			<div id="contact">
+				<div class="container">
+					<div class="row">
+					<h1> CONTACT US </h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus ducimus numquam doloremque laboriosam repellat eum asperiores quas possimus fugiat provident veritatis, cum rem quasi, similique labore nam, enim! Suscipit, explicabo!</p>
+			</div>
+			  <div class="row">
+					<div class="col-sm-6">
+						<!-- Do not change the code! -->
+<a id="foxyform_embed_link_774302" href="http://www.foxyform.com/">foxyform</a>
+<script type="text/javascript">
+(function(d, t){
+   var g = d.createElement(t),
+       s = d.getElementsByTagName(t)[0];
+   g.src = "http://www.foxyform.com/js.php?id=774302&sec_hash=2139b77538f&width=350px";
+   s.parentNode.insertBefore(g, s);
+}(document, "script"));
+</script>
+<!-- Do not change the code! -->
+					</div>
+
+				<div class="col-sm-6">
+					<address>
+						<Strong> Restaurante </Strong><br>
+						123 Fulton st <br> Fresno cal 93721<br>
+						<abbr title="phone">P:abbr> (123) 456-7390
+						</address>
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:400px;width:520px;'><div id='gmap_canvas' style='height:300px;width:400px;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://add-map.org/'>www.add-map.org</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=0174166482c915a5862475724fd6483b6c60b467'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(38.8251,-90.72890000000001),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(38.8251,-90.72890000000001)});infowindow = new google.maps.InfoWindow({content:'<strong></strong><br><br>63366 O\'Fallon<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				</div>
+			</div>
+</div>
+
+</div>
+	<!-- javascript	 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
