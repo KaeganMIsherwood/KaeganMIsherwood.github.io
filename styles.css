@@ -35,7 +35,7 @@ border:none;
 }
 
 #review {
-  background-image: url('../img/food_review.jpg');
+
   background-size: cover;
   background-attachment: fixed;
   height: 400px;
@@ -54,10 +54,16 @@ border:none;
   text-align: center;
 
 }
+#review h3 {
+  color: red;
+  font-family: 'Times New Roman', cursive;
+  font-size: 50px;
+  text-align: center;
+}
 #review p{
     font-family: 'Railway', sans-serif;
     font-size: 22px;
-    color:#fff;
+    color:#000;
     text-align: center;
 
 }
