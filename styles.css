@@ -10,6 +10,10 @@ border:none;
   height: 100vh;
   width: 100vw;
 }
+#story{
+  background-color: black;
+}
+
 #story h1 {
   color: #F15A24;
   font-family: 'Lobster', cursive;
@@ -32,6 +36,13 @@ border:none;
   z-index:-1;
   position: absolute;
   font-size: 200px
+}
+
+#story p {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+line-height: 1.42857143;
+color: white;
 }
 
 #review {
